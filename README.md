@@ -309,3 +309,15 @@ Pick **Heading look** in step 04: *Impact* (default: big bold text, one accent w
 ## Cloud AI (optional)
 
 A slow PC without a GPU can use a cloud model instead of Ollama for scoring moments and writing titles and hooks. Open **Cloud AI (optional)** on the page, pick a provider (Groq, OpenRouter, Gemini, OpenAI or LM Studio), paste your key, press **Test connection**, tick **Use Cloud AI** and Save. Only the *text* of candidate clips is sent to your provider; videos, audio and frames never leave your PC. The key is stored in `data/llm.json` on your computer and is never shown again. Speech-to-text still uses YouTube's captions or the local model. Environment variables `NEONCLIPPING_LLM_BASE_URL`, `NEONCLIPPING_LLM_MODEL` and `NEONCLIPPING_LLM_KEY` also work.
+
+## Batch mode (added in this fork)
+
+Start NeonClipping as usual, then clip many videos from a terminal:
+
+```
+python batch.py --file links.txt --count 6 --min 20 --max 45 --out my-clips
+```
+
+`links.txt` has one link per line (`#` lines are ignored). Each video gets its own folder with the clips, their `.srt`
+captions and a `clips.csv` you can open in Excel. Run the same command again to continue a list that was stopped.
+`python batch.py --help` lists every option (layout, caption style, language, resolution).
