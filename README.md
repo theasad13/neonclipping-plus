@@ -1,3 +1,9 @@
+<!-- remix-credit:start -->
+> **This is a fork of [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) by [@iamajmeena](https://github.com/iamajmeena).**
+> All credit for the original project goes to its author. It is used under the MIT licence, which is kept in this repository unchanged.
+> This fork, maintained by [@theasad13](https://github.com/theasad13), adds the features listed in [CHANGES-IN-THIS-FORK.md](CHANGES-IN-THIS-FORK.md).
+<!-- remix-credit:end -->
+
 # NeonClipping
 
 **Paste a link. Get captioned 9:16 clips in about two minutes. Free, local, open-source.**
